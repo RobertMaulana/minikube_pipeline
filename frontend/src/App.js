@@ -8,7 +8,7 @@ class App extends Component {
     data: ''
   }
   async componentDidMount() {
-    const resp = await axios.get("http://0.0.0.0:8080/random_number")
+    const resp = await axios.get("backend-svc:8080/random_number")
     if (resp.status === 200) {
       this.setState({data: resp.data})
     } else {
