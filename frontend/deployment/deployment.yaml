@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: "frontend-svc:latest"
+          image: "robertmaulana/frontend-svc:latest"
           ports:
             - name: http
               containerPort: 3000
